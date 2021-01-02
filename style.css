@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+header {
+  background-image: url(./images/background-img.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 1rem;
+  width: 1000px;
+  max-width: 100%;
+}
+
+nav {
+  padding: 0.5rem 0;
+}
+
+.above-nav {
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #f29559;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  flex: 1;
+}
+
+nav li a {
+  background-color: #f29559;
+  display: block;
+  padding: 1rem 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+nav a.active {
+  background-color: #fff;
+  color: #243e36;
+  font-weight: bolder;
+}
+
+nav a.highlighted {
+  background-color: #7ca982;
+}
+
+nav a:hover {
+  opacity: 0.8;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  align-items: flex-start;
+  margin-top: 5rem;
+}
+
+.main-content h1 {
+  background-color: #7ca982;
+  color: #2f1000;
+  display: inline-block;
+  font-family: "Caveat";
+  font-size: 3rem;
+  text-transform: capitalize;
+  padding-right: 5px;
+}
+
+.main-content a {
+  color: #243e36;
+  font-size: 1rem;
+  font-weight: 200;
+  padding: 5px;
+}
+
+.white-bckg {
+  background-color: #fff;
+  color: #2f1000;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.highlighted-2 {
+  background-color: #7ca982;
+  color: #fff;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+.white-bckg:hover {
+  background-color: #f29559;
+  border-radius: 30px;
+}
+.highlighted-2:hover {
+  background-color: #f29559;
+  border-radius: 30px;
+}
+
+@media screen and (max-width: 668px) {
+  .above-nav {
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1rem;
+  }
+
+  .num {
+    color: #243e36;
+    font-weight: 200;
+  }
+
+  .main-content {
+    font-size: 1.5rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding-top: 5px;
+  }
+}
